@@ -11,6 +11,7 @@ class Expert:
 
     def start(self):
         keep_going = True
+        has_contributed = False
         print(self.dialogue["intro"] )
 
         while keep_going:
@@ -31,10 +32,14 @@ class Expert:
                 self.kb[fruit_key] = {"name" : new_fruit}
                 with open(self.kb_path, 'w') as kb_file:
                     json.dump(self.kb, kb_file)
+                has_contributed = True
                 
 
             keep_going = input(f'{self.dialogue["repeat"]}\n').upper()[0] == "Y"
-        print
+
+        print(f'\n{self.dialogue["farewell"]}')
+        if has_contributed:
+            print(self.dialogue["contribution"])
 
 
 def main():
