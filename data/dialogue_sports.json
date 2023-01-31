@@ -1,10 +1,10 @@
 {
-    "intro" : "I am the sport ID system.",
-    "q1" : "Is one allowed to use hands?",
-    "q2" : "Are balls used?",
+    "intro" : "I am the sports ID system.",
+    "q1" : "Which ball is used?",
+    "q2" : "Is the use of hands allowed?",
     "conclusion" : "It looks like you play",
     "not_found" : "I do not recognize that sport. Please tell me what it is.",
     "repeat" : "Do you want to go again?",
-    "farewell" : "Goodbe.",
+    "farewell" : "Goodbye.",
     "contribution" : "Thank you for the contribution."
 }
